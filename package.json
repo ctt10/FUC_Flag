@@ -7,6 +7,7 @@
     "yarn": "1.22.10"
   },
   "scripts": {
+    "heroku-postbuild":"yarn dev",
     "build": "asb --verbose",
     "dev:deploy:contract": "near dev-deploy --wasmFile=\"./build/release/contract.wasm\"",
     "deploy:contract": "near deploy",
