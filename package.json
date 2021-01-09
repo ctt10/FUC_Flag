@@ -10,6 +10,7 @@
     "deploy": "yarn build && yarn deploy:contract && yarn deploy:pages",
     "prestart": "yarn build && yarn deploy:contract",
     "start": "parcel src/index.html",
+    "heroku-postbuild": "yarn dev", // this will be run on Heroku
     "asp": "asp --verbose",
     "test": "yarn asp && yarn jest",
     "jest": "yarn build && jest test",
