@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "scripts": {
     "heroku-postbuild":"yarn dev",
-    "build": "asb --verbose",
+    "build": "asp --verbose",
     "dev:deploy:contract": "near dev-deploy --wasmFile=\"./build/release/contract.wasm\"",
     "deploy:contract": "near deploy",
     "deploy": "yarn build && yarn deploy:contract && yarn deploy:pages",
