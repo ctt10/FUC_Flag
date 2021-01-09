@@ -3,6 +3,9 @@
   "description": "# This is an implementation of game -Place deployed on near blockchain",
   "license": "(MIT AND Apache-2.0)",
   "version": "0.0.1",
+  "engines": {
+    "yarn": "1.22.10"
+  },
   "scripts": {
     "build": "asb --verbose",
     "dev:deploy:contract": "near dev-deploy --wasmFile=\"./build/release/contract.wasm\"",
@@ -10,7 +13,7 @@
     "deploy": "yarn build && yarn deploy:contract && yarn deploy:pages",
     "prestart": "yarn build && yarn deploy:contract",
     "start": "parcel src/index.html",
-    "heroku-prebuild": "yarn dev",
+    //"heroku-prebuild": "yarn dev",
     "asp": "asp --verbose",
     "test": "yarn asp && yarn jest",
     "jest": "yarn build && jest test",
