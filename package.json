@@ -5,9 +5,7 @@
   "version": "0.0.1",
   "engines": {
     "node": "15.x",
-    "yarn": "1.x",
-    "npm": "7.x",
-    "asp": "0.0.2"
+    "yarn": "1.x"
   },
   "scripts": {
     "build": "asp --verbose",
