@@ -30,7 +30,6 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
-    "@as-pect/assembly": "^5.0.1",
     "near-api-js": "^0.36.2",
     "regenerator-runtime": "^0.13.7"
   },
