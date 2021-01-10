@@ -3,6 +3,11 @@
   "description": "# This is an implementation of game -Place deployed on near blockchain",
   "license": "(MIT AND Apache-2.0)",
   "version": "0.0.1",
+  "engines": {
+    "node": "15.x",
+    "yarn": "1.x",
+    "npm": "6.x"
+  },
   "scripts": {
     "heroku-postbuild":"yarn dev",
     "build": "asp --verbose",
