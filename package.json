@@ -8,12 +8,13 @@
     "yarn": "1.x"
   },
   "scripts": {
-    "build": "yarn dev",
+    "build": "yarn dev:deploy:contract",
     "dev:deploy:contract": "near dev-deploy --wasmFile=\"./build/release/main.wasm\"",
     "deploy:contract": "near deploy",
     "deploy": "yarn build && yarn deploy:contract && yarn deploy:pages",
     "prestart": "yarn build && yarn deploy:contract",
     "start": "parcel src/index.html",
+    "asp": "asp --verbose",
     "test": "yarn asp && yarn jest",
     "jest": "yarn build && jest test",
     "dev": "yarn build && yarn dev:deploy:contract && env-cmd -f ./neardev/dev-account.env parcel src/index.html"
