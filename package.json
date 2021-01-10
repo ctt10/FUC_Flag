@@ -6,7 +6,8 @@
   "engines": {
     "node": "15.x",
     "yarn": "1.x",
-    "npm": "7.x"
+    "npm": "7.x",
+    "asp": "0.0.2"
   },
   "scripts": {
     "build": "asp --verbose",
