@@ -1,4 +1,4 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME || 'FUC Flag'; /* TODO: fill this in! */
+const CONTRACT_NAME = process.env.CONTRACT_NAME || 'dev-1610191142968-6914733'; /* TODO: fill this in! */
 
 function getConfig (env) {
   switch (env) {
