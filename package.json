@@ -9,7 +9,7 @@
     "npm": "7.x"
   },
   "scripts": {
-    "build": "yarn add @as-pect/assembly &&asp --verbose",
+    "build": "asp --verbose",
     "dev:deploy:contract": "near dev-deploy --wasmFile=\"./build/release/contract.wasm\"",
     "deploy:contract": "near deploy",
     "deploy": "yarn build && yarn deploy:contract && yarn deploy:pages",
@@ -21,14 +21,16 @@
     "dev": "yarn build && yarn dev:deploy:contract && env-cmd -f ./neardev/dev-account.env parcel src/index.html"
   },
   "devDependencies": {
+    "asp": "^0.0.2",
     "dotenv": "^8.2.0",
     "env-cmd": "^10.1.0",
     "jest": "^26.6.3",
-    "near-sdk-as": "^2.2.2",
     "near-cli": "^1.5.2",
+    "near-sdk-as": "^2.2.2",
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
+    "@as-pect/assembly": "^5.0.1",
     "near-api-js": "^0.36.2",
     "regenerator-runtime": "^0.13.7"
   },

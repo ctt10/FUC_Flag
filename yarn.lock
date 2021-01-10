@@ -1809,6 +1809,13 @@ asn1@~0.2.3:
   dependencies:
     safer-buffer "~2.1.0"
 
+asp@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/asp/-/asp-0.0.2.tgz#b95f0810747c5b316ee5750a94f991c02da70018"
+  integrity sha1-uV8IEHR8WzFu5XUKlPmRwC2nABg=
+  dependencies:
+    js-fpm "0.0.2"
+
 assemblyscript-json@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/assemblyscript-json/-/assemblyscript-json-0.3.3.tgz#cc2d05d432d5df290768c51f72a1f00ff8b52a0d"
@@ -5867,6 +5874,11 @@ js-base64@^3.4.3:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-3.6.0.tgz#773e1de628f4f298d65a7e9842c50244751f5756"
   integrity sha512-wVdUBYQeY2gY73RIlPrysvpYx+2vheGo8Y1SNQv/BzHToWpAZzJU7Z6uheKMAe+GLSBig5/Ps2nxg/8tRB73xg==
+
+js-fpm@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/js-fpm/-/js-fpm-0.0.2.tgz#0349acbf4eca2818c19d9c190cb7049e707cf9bf"
+  integrity sha1-A0msv07KKBjBnZwZDLcEnnB8+b8=
 
 js-sha256@^0.9.0:
   version "0.9.0"
