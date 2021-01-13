@@ -8,7 +8,7 @@
     "yarn": "1.x"
   },
   "scripts": {
-    "build": "yarn dev:deploy:contract",
+    "build": "asp --verbose",
     "dev:deploy:contract": "near dev-deploy --wasmFile=\"./build/release/main.wasm\"",
     "deploy:contract": "near deploy",
     "deploy": "yarn build && yarn deploy:contract && yarn deploy:pages",
@@ -29,6 +29,15 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
+    "assemblyscript":"^0.17.10",
+    "@as-pect/assembly": "^5.0.1",
+    "@as-pect/cli": "^5.0.0",
+    "@as-pect/core": "^5.0.1",
+    "@as-pect/csv-reporter": "^5.0.1",
+    "@as-pect/json-reporter": "^5.0.1",
+    "@as-pect/snapshots": "^5.0.1",
+    "@assemblyscript/loader": "^0.9.4",
+    "@babel/core":"^7.0.0-0",
     "near-api-js": "^0.36.2",
     "regenerator-runtime": "^0.13.7"
   },
