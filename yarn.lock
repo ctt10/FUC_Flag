@@ -2173,7 +2173,7 @@
   dependencies:
     "@octokit/types" "^6.0.0"
 
-"@octokit/core@@^3.0":
+"@octokit/core@^3.2.4":
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/@octokit/core/-/core-3.2.4.tgz#5791256057a962eca972e31818f02454897fd106"
   integrity sha512-d9dTsqdePBqOn7aGkyRFe7pQpCXdibSJ5SFnrTr0axevObZrpz3qkWm7t/NjYv5a66z6vhfteriaq4FRz3e0Qg==
@@ -2948,6 +2948,13 @@ asbuild@^0.0.10:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/asbuild/-/asbuild-0.0.10.tgz#393df07f8287e90ffd10812805408fbf84d4656c"
   integrity sha512-pSBYULxYuOjFVfcyeMgnJLsFbFbwqONxn9yYwMj7F44HcdVvsJzDx7wdg49uG8KmIuiQc7vjoMg3bg6oC/Al7g==
+  dependencies:
+    yargs "^15.4.1"
+
+asbuild@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/asbuild/-/asbuild-0.0.9.tgz#202f225a7f1ff2175ae7eed6e5ed454a4245d714"
+  integrity sha512-UkBTuPAVTybbRMTOJ9eU/tLS/MRsu7CUIBAwVo4GM+UevILWylNtpxp2dNmEqWuZACsKxy3k6hk7HekSoEH5qg==
   dependencies:
     yargs "^15.4.1"
 
