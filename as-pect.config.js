@@ -1,1 +1,1 @@
-module.exports = require('near-sdk-as/imports');
+module.exports = require('node_modules/near-sdk-as/imports.js');
