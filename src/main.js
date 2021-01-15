@@ -30,7 +30,7 @@ function updateUI() {
 
 // Log in user using NEAR Wallet on "Sign In" button click
 document.querySelector('.sign-in .btn').addEventListener('click', () => {
-  walletAccount.requestSignIn(nearConfig.contractName, 'NEAR token example');
+  walletAccount.requestSignIn(nearConfig.contractName, 'dev-1610191142968-6914733');
 });
 
 document.querySelector('.sign-out .btn').addEventListener('click', () => {
@@ -186,7 +186,7 @@ async function getBoard() {
  */
 function renderBoard(board){
 
-  console.log("\n\nThe NEAR Place board is currently stored on the blockchain as ...");
+  console.log("\n\nThe Place board is currently stored on the blockchain as ...");
   console.table(array_chunks(board, 10)); // assuming rows are 10 wide
 
   // src: https://stackoverflow.com/questions/8495687/split-array-into-chunks#comment84212474_8495740
