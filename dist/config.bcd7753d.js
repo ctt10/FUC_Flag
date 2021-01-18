@@ -118,7 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"config.js":[function(require,module,exports) {
-var CONTRACT_NAME = "dev-1610691489156-8348405" || 'dev-1610191142968-6914733';
+var CONTRACT_NAME = "fuc_flag.bucketbucket.testnet" || 'fuc_flag.bucketbucket.testnet';
 /* TODO: fill this in! */
 
 function getConfig(env) {
@@ -136,7 +136,7 @@ function getConfig(env) {
     case 'development':
     case 'testnet':
       return {
-        networkId: 'testnet',
+        networkId: 'default',
         nodeUrl: 'https://rpc.testnet.near.org',
         contractName: CONTRACT_NAME,
         walletUrl: 'https://wallet.testnet.near.org',
@@ -212,7 +212,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35695" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45711" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

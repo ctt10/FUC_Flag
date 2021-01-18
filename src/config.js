@@ -1,4 +1,4 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME || 'dev-1610191142968-6914733'; /* TODO: fill this in! */
+const CONTRACT_NAME = process.env.CONTRACT_NAME || 'fuc_flag.bucketbucket.testnet'; /* TODO: fill this in! */
 
 function getConfig (env) {
   switch (env) {
@@ -14,7 +14,7 @@ function getConfig (env) {
     case 'development':
     case 'testnet':
       return {
-        networkId: 'testnet',
+        networkId: 'default',
         nodeUrl: 'https://rpc.testnet.near.org',
         contractName: CONTRACT_NAME,
         walletUrl: 'https://wallet.testnet.near.org',
