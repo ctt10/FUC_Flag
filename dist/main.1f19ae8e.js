@@ -27370,7 +27370,7 @@ __exportStar(require("./common-index"), exports);
 require("error-polyfill");
 
 },{"./key_stores/browser-index":"../node_modules/near-api-js/lib/key_stores/browser-index.js","./common-index":"../node_modules/near-api-js/lib/common-index.js","error-polyfill":"../node_modules/error-polyfill/index.js"}],"config.js":[function(require,module,exports) {
-var CONTRACT_NAME = "dev-1610191142968-6914733" || 'dev-1610191142968-6914733';
+var CONTRACT_NAME = "dev-1610691489156-8348405" || 'dev-1610191142968-6914733';
 /* TODO: fill this in! */
 
 function getConfig(env) {
@@ -27388,7 +27388,7 @@ function getConfig(env) {
     case 'development':
     case 'testnet':
       return {
-        networkId: 'default',
+        networkId: 'testnet',
         nodeUrl: 'https://rpc.testnet.near.org',
         contractName: CONTRACT_NAME,
         walletUrl: 'https://wallet.testnet.near.org',
@@ -27515,7 +27515,7 @@ function updateUI() {
 
 
 document.querySelector('.sign-in .btn').addEventListener('click', function () {
-  walletAccount.requestSignIn(nearConfig.contractName, 'NEAR token example');
+  walletAccount.requestSignIn(nearConfig.contractName, 'dev-1610191142968-6914733');
 });
 document.querySelector('.sign-out .btn').addEventListener('click', function () {
   walletAccount.signOut(); // TODO: Move redirect to .signOut() ^^^
@@ -27689,7 +27689,7 @@ function _getBoard() {
 }
 
 function renderBoard(board) {
-  console.log("\n\nThe NEAR Place board is currently stored on the blockchain as ...");
+  console.log("\n\nThe Place board is currently stored on the blockchain as ...");
   console.table(array_chunks(board, 10)); // assuming rows are 10 wide
   // src: https://stackoverflow.com/questions/8495687/split-array-into-chunks#comment84212474_8495740
 
@@ -27729,7 +27729,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35825" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35695" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
