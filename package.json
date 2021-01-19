@@ -10,7 +10,7 @@
   "scripts": {
     "build": "asp && yarn dev",
     "dev:deploy:contract": "near dev-deploy --wasmFile=\"./build/release/main.wasm\"",
-    "deploy:contract": "near deploy --accountId fuc_flag.bucketbucket.testnet --wasmFile ./build/release/main.wasm --networkId default bucketbucket.testnet",
+    "deploy:contract": "export NEAR_ENV=testnet && near deploy --accountId fuc_flag.bucketbucket.testnet --wasmFile ./build/release/main.wasm bucketbucket.testnet",
     "deploy": "yarn build && yarn deploy:contract",
     "prestart": "yarn dev && yarn deploy:contract",
     "start": "parcel src/index.html",
