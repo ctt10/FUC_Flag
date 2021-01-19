@@ -17,7 +17,7 @@
     "asp": "asp --verbose",
     "test": "yarn asp && yarn jest",
     "jest": "yarn asp && jest test",
-    "dev": "yarn deploy:contract && env-cmd -f ./neardev/dev-account.env parcel src/index.html"
+    "dev": "env-cmd -f ./neardev/dev-account.env parcel src/index.html"
   },
   "devDependencies": {
     "asp": "^0.0.2",
