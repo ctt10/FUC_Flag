@@ -9,8 +9,8 @@
   },
   "scripts": {
     "build": "asp && yarn dev",
-    "dev:deploy:contract": "near dev-deploy --nodeUrl https://rpc.testnet.near.org --networkId development --accountId fuc_flag.bucketbucket.testnet --wasmFile=./build/release/main.wasm",
-    "deploy:contract": "near deploy --nodeUrl https://rpc.testnet.near.org --networkId development --accountId fuc_flag.bucketbucket.testnet --wasmFile ./build/release/main.wasm bucketbucket.testnet",
+    "dev:deploy:contract": "NODE_ENV=development near dev-deploy --nodeUrl https://rpc.testnet.near.org --networkId development --accountId fuc_flag.bucketbucket.testnet --wasmFile=./build/release/main.wasm",
+    "deploy:contract": "NODE_ENV=development near deploy --nodeUrl https://rpc.testnet.near.org --networkId development --accountId fuc_flag.bucketbucket.testnet --wasmFile ./build/release/main.wasm bucketbucket.testnet",
     "deploy": "yarn build && yarn deploy:contract",
     "prestart": "yarn dev && yarn deploy:contract",
     "start": "parcel src/index.html",

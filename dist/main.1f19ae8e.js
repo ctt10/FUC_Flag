@@ -27370,7 +27370,7 @@ __exportStar(require("./common-index"), exports);
 require("error-polyfill");
 
 },{"./key_stores/browser-index":"../node_modules/near-api-js/lib/key_stores/browser-index.js","./common-index":"../node_modules/near-api-js/lib/common-index.js","error-polyfill":"../node_modules/error-polyfill/index.js"}],"config.js":[function(require,module,exports) {
-var CONTRACT_NAME = undefined || 'fuc_flag.bucketbucket.testnet';
+var CONTRACT_NAME = "dev-1611067944887-9280126" || 'fuc_flag.bucketbucket.testnet';
 /* TODO: fill this in! */
 
 function getConfig(env) {
@@ -27729,7 +27729,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39745" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40833" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
