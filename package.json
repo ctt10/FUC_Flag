@@ -8,7 +8,7 @@
     "yarn": "1.x"
   },
   "scripts": {
-    "build": "asp && yarn dev",
+    "build": "yarn start",
     "dev:deploy:contract": "NODE_ENV=development near dev-deploy --nodeUrl https://rpc.testnet.near.org --networkId development --accountId fuc_flag.bucketbucket.testnet --wasmFile=./build/release/main.wasm",
     "deploy:contract": "NODE_ENV=development near deploy --nodeUrl https://rpc.testnet.near.org --networkId development --accountId fuc_flag.bucketbucket.testnet --wasmFile ./build/release/main.wasm bucketbucket.testnet",
     "deploy": "yarn build && yarn deploy:contract",
