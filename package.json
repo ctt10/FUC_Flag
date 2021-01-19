@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "asp && yarn dev",
-    "dev:deploy:contract": "near dev-deploy --wasmFile=\"./build/release/main.wasm\"",
+    "dev:deploy:contract": "near dev-deploy --nodeUrl https://rpc.testnet.near.org --networkId development --accountId fuc_flag.bucketbucket.testnet --wasmFile=./build/release/main.wasm",
     "deploy:contract": "near deploy --nodeUrl https://rpc.testnet.near.org --networkId development --accountId fuc_flag.bucketbucket.testnet --wasmFile ./build/release/main.wasm bucketbucket.testnet",
     "deploy": "yarn build && yarn deploy:contract",
     "prestart": "yarn dev && yarn deploy:contract",
@@ -17,7 +17,7 @@
     "asp": "asp --verbose",
     "test": "yarn asp && yarn jest",
     "jest": "yarn asp && jest test",
-    "dev": "env-cmd -f ./neardev/dev-account.env parcel src/index.html"
+    "dev": "yarn dev:deploy:contract && yarn parcel src/index.html"
   },
   "devDependencies": {
     "asp": "^0.0.2",

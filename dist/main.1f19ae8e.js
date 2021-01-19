@@ -27370,7 +27370,7 @@ __exportStar(require("./common-index"), exports);
 require("error-polyfill");
 
 },{"./key_stores/browser-index":"../node_modules/near-api-js/lib/key_stores/browser-index.js","./common-index":"../node_modules/near-api-js/lib/common-index.js","error-polyfill":"../node_modules/error-polyfill/index.js"}],"config.js":[function(require,module,exports) {
-var CONTRACT_NAME = "fuc_flag.bucketbucket.testnet" || 'fuc_flag.bucketbucket.testnet';
+var CONTRACT_NAME = undefined || 'fuc_flag.bucketbucket.testnet';
 /* TODO: fill this in! */
 
 function getConfig(env) {
@@ -27455,7 +27455,7 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-var nearConfig = (0, _config.default)("development" || "testnet"); // Connects to NEAR and provides `near`, `walletAccount` and `contract` objects in `window` scope
+var nearConfig = (0, _config.default)("development" || "development"); // Connects to NEAR and provides `near`, `walletAccount` and `contract` objects in `window` scope
 
 function connect() {
   return _connect.apply(this, arguments);
@@ -27729,7 +27729,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41683" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39745" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
